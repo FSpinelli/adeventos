@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="main">
+        <div data-role="main" class="ui-content">
+            <!-- <h1 align="center">AdEventos</h1> -->
+            <a href="#anylink" class="ui-btn">Entrar com Facebook</a>
+            <a href="#signin" class="ui-btn" data-transition="slide">Entrar com E-mail</a>
+            <a href="#signup" class="ui-btn" data-transition="slide">Cadastrar</a>
+        </div>
+    </div>
+    <div data-role="page" id="signup">
+        <div data-role="main" class="ui-content">
+            <form name="signup" novalidate>
+            	<!-- <h1 align="center">Cadastre-se</h1> -->
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="password" name="password" placeholder="Senha">
+                <input type="password" name="confirm_password" placeholder="Confirme a senha">
+                <button type="submit" class="ui-btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div data-role="page" id="signin">
+        <div data-role="main" class="ui-content">
+            <form name="signin" novalidate>
+                <!-- <h1 align="center">Login</h1> -->
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="password" name="password" placeholder="Senha">
+                <button type="submit" class="ui-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
